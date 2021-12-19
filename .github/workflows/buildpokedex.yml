@@ -12,7 +12,7 @@ jobs:
     
     - name: workingdirectory  
       run: | 
-          cd ./Pokemon/Pokemon
+          cd ./Pokemon
       
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
