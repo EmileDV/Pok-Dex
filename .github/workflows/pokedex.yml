@@ -6,7 +6,7 @@ on:
       
 
 env:
-  PROJECT_PATH: Pokemon/Pokemon.csproj
+  PROJECT_PATH: Pokemon/
   
 
 
