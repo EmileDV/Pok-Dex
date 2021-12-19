@@ -6,7 +6,7 @@ on:
       
 
 env:
-  PROJECT_PATH: PokeDex\Pokemon\Pokemon\
+  PROJECT_PATH: Pokemon/Pokemon/Pokemon.csproj
 
 
 jobs:
