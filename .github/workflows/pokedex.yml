@@ -7,6 +7,7 @@ on:
 
 env:
   PROJECT_PATH: Pokemon/Pokemon/Pokemon.csproj
+  
 
 
 jobs:
@@ -14,6 +15,8 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
+      - with:
+         dotnet-version: 6.0.x
       - run: dotnet restore ${{ env.PROJECT_PATH }}
       - run: dotnet build ${{ env.PROJECT_PATH }} -c Release --no-restore
       - run: dotnet publish ${{ env.PROJECT_PATH }} -c Release --self-contained -r win-x64 /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true
